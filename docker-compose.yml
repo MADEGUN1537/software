@@ -1,0 +1,22 @@
+version: "3.8"  # Update to the current version
+
+services:
+  frontend:
+    build:
+      context: ./frontend  # Path to the frontend directory
+    ports:
+      - "3000:3000"  # Adjust port according to your frontend app
+    volumes:
+      - ./frontend:/app
+    environment:
+      - NODE_ENV=development
+
+  backend:
+    build:
+      context: ./backend  # Path to the backend directory
+    ports:
+      - "80:80"  # Adjust port according to your backend app
+    volumes:
+      - ./backend:/app
+    environment:
+      - NODE_ENV=development
