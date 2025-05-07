@@ -10,6 +10,12 @@
   "license": "ISC",
   "description": "SearchVisuals page",
   "dependencies": {
+    "@babel/core": "^7.21.0",
+    "@babel/preset-env": "^7.21.0",
+    "@babel/preset-react": "^7.21.0",
+    "babel-core": "^4.7.16",
+    "babel-preset-env": "^0.0.0",
+    "core-js": "^3.42.0",
     "cors": "^2.8.5",
     "dotenv": "^16.5.0",
     "express": "^5.1.0",
